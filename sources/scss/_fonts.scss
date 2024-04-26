@@ -1,1 +1,8 @@
-/* Fonts */
+@mixin font-face($font-name, $font-weight, $font-weight-value, $font-style: normal) {
+  @font-face {
+    font-family: $font-name;
+    src: url('../fonts/static/#{$font-name}-#{$font-weight}.ttf') format('truetype');
+    font-weight: $font-weight-value;
+    font-style: $font-style;
+  }
+}
