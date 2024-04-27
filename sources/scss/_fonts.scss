@@ -1,8 +1,11 @@
-@mixin font-face($font-name, $font-weight, $font-weight-value, $font-style: normal) {
+@mixin variable-font-face($font-name, $font-file-name, $font-style: normal) {
   @font-face {
     font-family: $font-name;
-    src: url('../fonts/static/#{$font-name}-#{$font-weight}.ttf') format('truetype');
-    font-weight: $font-weight-value;
+    src: url('../fonts/variable/#{$font-file-name}.ttf') format('truetype');
+    font-weight: 1 999;
+    font-stretch: 25% 151%;
     font-style: $font-style;
   }
 }
+
+@include variable-font-face('Figtree', 'Figtree-VariableFont_wght');
