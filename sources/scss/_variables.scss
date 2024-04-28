@@ -1,1 +1,22 @@
-/* Variables */
+$colors: (
+        "black": #111111,
+        "yellow": #F4D04E,
+        "grey": #7F7F7F,
+        "white": #FFFFFF,
+);
+
+$font-family: 'Figtree', sans-serif;
+$font-size: (
+        "heading": 24px,
+        "body-m": 16px,
+        "body-s": 14px,
+);
+$font-size-mobile: (
+        "heading": 20px,
+        "body-m": 14px,
+        "body-s": 12px,
+);
+$font-weight: (
+        "medium": 400,
+        "extra-bold": 800
+)

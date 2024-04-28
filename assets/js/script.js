@@ -1,1 +1,1 @@
-"use strict";
+"use strict";document.addEventListener("DOMContentLoaded",function(){var e=document.querySelector(".blog-preview-card"),t=document.querySelector(".blog-preview-card__title");t.addEventListener("mouseover",function(){e.classList.add("is-hover-card"),t.classList.add("is-hover-title")}),t.addEventListener("mouseout",function(){e.classList.remove("is-hover-card"),t.classList.remove("is-hover-title")})});

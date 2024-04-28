@@ -314,7 +314,6 @@ template {
   font-stretch: 25% 151%;
   font-style: normal;
 }
-/* Variables */
 *,
 *:before,
 *:after {
@@ -323,6 +322,7 @@ template {
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  line-height: 150%;
 }
 
 body {
@@ -331,8 +331,114 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Figtree", sans-serif;
+  background: #F4D04E;
 }
 
-h1 {
-  font-weight: 100;
+.blog-preview-card {
+  background: #FFFFFF;
+  max-width: 384px;
+  width: 100%;
+  height: fit-content;
+  border-radius: 20px;
+  padding: 24px;
+  border: solid 1px #111111;
+  box-shadow: 8px 8px #111111;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  transition: all 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+  margin: 0 24px;
+}
+@media screen and (min-width: 425px) {
+  .blog-preview-card {
+    margin: 0;
+    max-height: 522px;
+  }
+}
+.blog-preview-card__image-container {
+  border-radius: 10px;
+  height: 200px;
+}
+.blog-preview-card__image-container img {
+  border-radius: inherit;
+  width: 100%;
+  min-height: 200px;
+  object-fit: cover;
+}
+.blog-preview-card__infos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.blog-preview-card__category {
+  padding: 4px 12px;
+  background: #F4D04E;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 800;
+  display: block;
+  width: 82px;
+}
+@media screen and (min-width: 425px) {
+  .blog-preview-card__category {
+    font-size: 14px;
+  }
+}
+.blog-preview-card__published {
+  font-size: 12px;
+  font-weight: 500;
+}
+@media screen and (min-width: 425px) {
+  .blog-preview-card__published {
+    font-size: 14px;
+  }
+}
+.blog-preview-card__title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: #111111;
+  width: fit-content;
+  transition: color 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+@media screen and (min-width: 425px) {
+  .blog-preview-card__title {
+    font-size: 24px;
+  }
+}
+.blog-preview-card__title::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+.blog-preview-card__description {
+  font-size: 14px;
+  color: #7F7F7F;
+}
+@media screen and (min-width: 425px) {
+  .blog-preview-card__description {
+    font-size: 16px;
+  }
+}
+.blog-preview-card__author-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.blog-preview-card__author-container img {
+  width: 32px;
+  height: 32px;
+}
+.blog-preview-card__author-name {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.is-hover-title {
+  color: #F4D04E;
+}
+
+.is-hover-card {
+  box-shadow: 16px 16px #111111;
 }
