@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/Nelo0o/social-links-profile?tab=readme-ov-file)
-- Live Site URL: [Live site](https://nelo0o.github.io/social-links-profile)
+- Solution URL: [Solution](https://github.com/Nelo0o/blog-preview-card)
+- Live Site URL: [Live site](https://nelo0o.github.io/blog-preview-card/)
 
 ## My process
 
