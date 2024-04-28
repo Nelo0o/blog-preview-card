@@ -337,7 +337,6 @@ body {
 .blog-preview-card {
   background: #FFFFFF;
   max-width: 384px;
-  width: 100%;
   height: fit-content;
   border-radius: 20px;
   padding: 24px;
@@ -393,6 +392,10 @@ body {
   .blog-preview-card__published {
     font-size: 14px;
   }
+}
+.blog-preview-card h1 {
+  margin: 0;
+  font-size: 0;
 }
 .blog-preview-card__title {
   margin: 0;

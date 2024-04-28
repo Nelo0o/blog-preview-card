@@ -21,7 +21,6 @@ body {
 .blog-preview-card {
   background: map-get($colors, "white");
   max-width: 384px;
-  width: 100%;
   height: fit-content;
   border-radius: 20px;
   padding: 24px;
@@ -75,6 +74,11 @@ body {
     @media screen and (min-width: 425px) {
       font-size: map-get($font-size, "body-s");
     }
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 0;
   }
 
   &__title {
