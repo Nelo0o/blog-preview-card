@@ -327,17 +327,20 @@ template {
 }
 
 body {
-  height: 100svh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: "Figtree", sans-serif;
   background: #F4D04E;
 }
 
+main {
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .blog-preview-card {
   background: #FFFFFF;
-  max-width: 384px;
+  max-width: 327px;
   height: fit-content;
   border-radius: 20px;
   padding: 24px;
@@ -352,8 +355,9 @@ body {
 }
 @media screen and (min-width: 425px) {
   .blog-preview-card {
-    margin: 0;
+    max-width: 384px;
     max-height: 522px;
+    margin: 0;
   }
 }
 .blog-preview-card__image-container {

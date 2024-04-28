@@ -11,17 +11,20 @@
 }
 
 body {
-  height: 100svh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: $font-family;
   background: map-get($colors, "yellow");
 }
 
+main {
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .blog-preview-card {
   background: map-get($colors, "white");
-  max-width: 384px;
+  max-width: 327px;
   height: fit-content;
   border-radius: 20px;
   padding: 24px;
@@ -34,8 +37,9 @@ body {
   transition: all 0.2s cubic-bezier(0.25, 1, 0.5, 1);
   margin: 0 24px;
   @media screen and (min-width: 425px) {
-    margin: 0;
+    max-width: 384px;
     max-height: 522px;
+    margin: 0;
   }
 
   &__image-container {
