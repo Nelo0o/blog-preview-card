@@ -323,10 +323,11 @@ template {
   list-style: none;
   text-decoration: none;
   line-height: 150%;
+  letter-spacing: 0;
 }
 
 body {
-  height: 100vh;
+  height: 100svh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -377,7 +378,7 @@ body {
   font-size: 12px;
   font-weight: 800;
   display: block;
-  width: 82px;
+  width: fit-content;
 }
 @media screen and (min-width: 425px) {
   .blog-preview-card__category {

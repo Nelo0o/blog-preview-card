@@ -7,10 +7,11 @@
   list-style: none;
   text-decoration: none;
   line-height: 150%;
+  letter-spacing: 0;
 }
 
 body {
-  height: 100vh;
+  height: 100svh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +63,7 @@ body {
     font-size: map-get($font-size-mobile, "body-s");
     font-weight: 800;
     display: block;
-    width: 82px;
+    width: fit-content;
     @media screen and (min-width: 425px) {
       font-size: map-get($font-size, "body-s");
     }
